@@ -1,0 +1,18 @@
+<div class="container row-cols-md-9" >
+<div>
+    <td><img src="https://www.serdartekin.com/add-2.png" alt="Add" routerLink="/todo/add"></td>
+</div>
+<div class="row row-cols-1 row-cols-md-6 g-0">
+    <div *ngFor="let user of users" class="card" style="width: 15rem; margin-right: 20px">
+        <img src="http://serdartekin.com/phone1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{user.firstName}} {{user.lastName}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{user.phone}}</h6>
+            <div style="float: right;">
+                <td><img src="https://www.serdartekin.com/edit2.png" alt="Edit" routerLink="/user/update"></td>
+                <td><img src="https://www.serdartekin.com/delete2.png" alt="Delete" routerLink="/user/delete"></td>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
